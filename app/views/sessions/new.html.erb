@@ -1,0 +1,9 @@
+<h1>Sign In</h1>
+
+<%= form_tag('/signin', method: 'POST') do %>
+  <%= label_tag('user[name]', "Name: ") %>
+  <%= text_field_tag('user[name]') %><br>
+  <%= label_tag('user[password]', "Password: ") %>
+  <%= password_field_tag('user[password]') %><br><br>
+  <%= submit_tag('Sign In') %>
+<% end %>
